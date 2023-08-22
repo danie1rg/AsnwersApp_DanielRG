@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsnwersApp_DanielRG.Views.AppWelcomePage">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Padding="50, 25, 50,25" >
+
+            <Label Grid.Row="0" Grid.Column="1" Text="Welcome ask your question" x:Name="TxtNombre"
+ VerticalOptions="CenterAndExpand" 
+ HorizontalOptions="CenterAndExpand" />
+
+            <Button Grid.Row="1" Margin="0,0,0,100" x:Name="BtnLogin" Text="Ask your question" BackgroundColor="DarkGreen" CornerRadius="15" Clicked="BtnEntrar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

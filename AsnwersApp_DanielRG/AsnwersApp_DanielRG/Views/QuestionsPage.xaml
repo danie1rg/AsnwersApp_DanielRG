@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsnwersApp_DanielRG.Views.QuestionsPage">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout>
+
+                <Label  Text="Appointments List"  TextColor="Black" FontSize="20" HorizontalTextAlignment="Center" Padding="0,0,0,30" />
+
+                <ListView x:Name="LvList" RowHeight="150" SeparatorVisibility="Default" IsVisible="true">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell Height="20">
+                                <StackLayout Padding="5">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="100"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="20"/>
+                                            <RowDefinition Height="20"/>
+                                            <RowDefinition Height="15" />
+                                            <RowDefinition Height="35" />
+                                        </Grid.RowDefinitions>
+                                        <Label Grid.Column="0" Text="{Binding Ask1}" TextColor="Blue" FontSize="Medium" />
+                                        <Label Grid.Row="1"  Text="{Binding AskDetail}" TextColor="Black" FontSize="Small"/>
+                                        <Label  Grid.Row="2" Text="{Binding ImageUrl}" TextColor="Black" FontSize="Small"/>
+                                        <Label  Grid.Row="3" Text="{Binding Date}" TextColor="Black" FontSize="Small"/>
+                                    </Grid>
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+
+
+            </StackLayout>
+
+
+        </ScrollView>
+
+
+    </ContentPage.Content>
+</ContentPage>
